@@ -8,6 +8,36 @@ generator client {
   output   = "../generated/prisma"
 }
 
+
+//defines which database prisma will communnicate with
+
 datasource db {
   provider = "postgresql"
 }
+
+enum Role {
+  USER
+  ADMIN
+  SUPPORT
+
+}
+
+enum UserStatus{
+  ACTIVE
+  BLOCKED
+  SUSPENDED
+}
+
+
+model User {
+  id  String  @id @default(uuid())
+  username String  @unique
+  email String @unique
+  password String
+  role Role  @default(USER)
+  status UserStatus @default(ACTIVE)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
