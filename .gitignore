@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Build
+dist/
+build/
+
+# Prisma / AI generated tooling
+.agents/
+.claude/
+.windsurf/
+
+# Misc
+.DS_Store
