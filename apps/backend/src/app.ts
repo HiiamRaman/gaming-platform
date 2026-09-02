@@ -1,5 +1,9 @@
 import express from "express";
+import authRouter from "./routes/auth.routes.js";
 const app = express();
+
+//global Middleware
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
@@ -8,4 +12,5 @@ app.get("/", (req, res) => {
 });
 
 
-export default app
+app.use("/api/v1", authRouter);
+export default app;
