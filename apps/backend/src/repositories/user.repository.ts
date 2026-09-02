@@ -27,3 +27,12 @@ export async function createUser(
     },
   });
 }
+
+export async function updateRefreshToken(userId: string, refreshToken: string|null) {
+  return await prisma.user.update({
+    where: { id: userId },
+    data: { refreshToken },
+  });
+}
+
+

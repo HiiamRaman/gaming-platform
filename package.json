@@ -13,6 +13,10 @@
     "dev:backend": "npm run dev --workspace=backend"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
     "concurrently": "^10.0.5"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7"
   }
 }
