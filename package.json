@@ -7,16 +7,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev:customer\" \"npm run dev:admin\" \"npm run dev:backend\"",
+    "dev": "concurrently \"npm run dev:customer\" \"npm run dev:admin\"",
     "dev:customer": "npm run dev --workspace=customer",
-    "dev:admin": "npm run dev --workspace=admin",
-    "dev:backend": "npm run dev --workspace=backend"
+    "dev:admin": "npm run dev --workspace=admin"
   },
   "devDependencies": {
-    "@types/cookie-parser": "^1.4.10",
     "concurrently": "^10.0.5"
   },
-  "dependencies": {
-    "cookie-parser": "^1.4.7"
-  }
+  "dependencies": {}
 }
