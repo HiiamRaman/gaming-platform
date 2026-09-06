@@ -14,6 +14,11 @@ import { SportsPage } from "./pages/SportsPage";
 import { useAuthStore } from "./store/auth.store";
 import { FishingPage } from "./pages/FishingPage";
 import { EsportsPage } from "./pages/EsportsPage";
+import { CasinoPage } from "./pages/CasinoPage";
+
+// Import the LiveChatWidget here
+import { LiveChatWidget } from "./components/LiveChatWidget";
+
 function PlaceholderPage({ title }: { title: string }) {
   return (
     <div className="p-12 text-center max-w-xl mx-auto mt-16 bg-zinc-900/50 border border-zinc-800 rounded-2xl">
@@ -50,13 +55,15 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
+
             <Route path="/jackpot" element={<JackpotPage />} />
             <Route path="/slot" element={<SlotPage />} />
             <Route path="/live-casino" element={<LiveCasinoPage />} />
             <Route path="/crash-game" element={<CrashPage />} />
             <Route path="/sports" element={<SportsPage />} />
-            <Route path="/fishing" element={< FishingPage/>} />
-            <Route path="/esports" element={<EsportsPage/>}/>
+            <Route path="/fishing" element={<FishingPage />} />
+            <Route path="/esports" element={<EsportsPage />} />
+            <Route path="/casino" element={<CasinoPage />} />
             <Route
               path="/promotion"
               element={<PlaceholderPage title="Promotion" />}
@@ -87,6 +94,10 @@ function App() {
         />
 
         <Footer />
+
+        {/* Render the chat widget globally, outside of routes and modals */}
+        <LiveChatWidget />
+
       </div>
     </Router>
   );

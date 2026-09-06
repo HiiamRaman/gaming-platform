@@ -1,3 +1,4 @@
+
 export type GameCategory =
   | 'home'
   | 'jackpot'
@@ -31,5 +32,5 @@ export interface BaseGameCardProps {
   badge?: string;
   imageBg: string;
   onPlay: () => void;
-  children?: ReactNode;
+  children?: React.ReactNode;
 }

@@ -14,10 +14,11 @@ export const Footer: React.FC = () => {
                 key={provider.name}
                 className="bg-[#141414] p-3 rounded-md border border-[#222] flex items-center justify-center h-13 hover:border-zinc-600 hover:bg-[#1a1a1a] transition-all duration-200 group cursor-pointer shadow-sm"
               >
+                {/* Full color logos enabled by removing grayscale and low opacity */}
                 <img
                   src={provider.logo}
                   alt={provider.name}
-                  className="max-h-7 max-w-full object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  className="max-h-7 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             ))}
