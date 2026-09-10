@@ -32,7 +32,7 @@ export const gameProviders: GameProvider[] = [
   { name: "Big Gaming", logo: "/src/assets/Footer/footer8.webp" },
   { name: "Pretty Gaming", logo: "/src/assets/Footer/footer9.webp" },
   { name: "Crazy Gaming", logo: "/src/assets/Footer/footer10.webp" },
-  { name: "JILI", logo: "/src/assets/footer/Footer11.webp" },
+  { name: "JILI", logo: "/src/assets/Footer/footer11.webp" },
   { name: "KingMidas", logo: "/src/assets/Footer/footer12.webp" },
   { name: "BGaming", logo: "/src/assets/Footer/footer13.webp" },
   { name: "Rich88", logo: "/src/assets/Footer/footer14.webp" },
@@ -41,9 +41,9 @@ export const gameProviders: GameProvider[] = [
   { name: "PG Soft", logo: "/src/assets/Footer/footer2.webp" },
   { name: "BNG", logo: "/src/assets/Footer/footer2.webp" },
   { name: "Vertex Play", logo: "/src/assets/Footer/footer2.webp"},
-  { name: "JDB", logo: "/src/assets/footer/Footer2.webp" },
-  { name: "Rich", logo: "/src/assets/footer/Footer2.webp" },
-  { name: "InOut", logo: "/src/assets/footer/Footer2.webp" },
+  { name: "JDB", logo: "/src/assets/Footer/footer2.webp" },
+  { name: "Rich", logo: "/src/assets/Footer/footer2.webp" },
+  { name: "InOut", logo: "/src/assets/Footer/footer2.webp" },
 ];
 
 export const certifications = [
