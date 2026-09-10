@@ -15,7 +15,7 @@ import { useAuthStore } from "./store/auth.store";
 import { FishingPage } from "./pages/FishingPage";
 import { EsportsPage } from "./pages/EsportsPage";
 import { CasinoPage } from "./pages/CasinoPage";
-
+import { DepositSuccessPage } from "./pages/DepositSuccessPage";
 // Import the LiveChatWidget here
 import { LiveChatWidget } from "./components/LiveChatWidget";
 
@@ -64,6 +64,7 @@ function App() {
             <Route path="/fishing" element={<FishingPage />} />
             <Route path="/esports" element={<EsportsPage />} />
             <Route path="/casino" element={<CasinoPage />} />
+            <Route path="deposit-success" element={<DepositSuccessPage />} />
             <Route
               path="/promotion"
               element={<PlaceholderPage title="Promotion" />}
@@ -97,7 +98,6 @@ function App() {
 
         {/* Render the chat widget globally, outside of routes and modals */}
         <LiveChatWidget />
-
       </div>
     </Router>
   );
