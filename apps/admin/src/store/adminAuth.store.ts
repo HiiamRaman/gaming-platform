@@ -15,7 +15,7 @@ interface AdminAuthState {
   initialize: () => void;
 }
 
-export const useAdminAuth = create<AdminAuthState>((set) => ({
+export const useAdminAuth = create<AdminAuthState>()((set) => ({
   user: null,
   token: null,
   isAuthenticated: false,

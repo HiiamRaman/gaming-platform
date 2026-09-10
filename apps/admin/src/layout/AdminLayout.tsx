@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
@@ -16,7 +16,7 @@ export function AdminLayout() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(`${path}/`);
+  // const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(`${path}/`);
 
   const navItems = [
     { label: "Dashboard", path: "/admin", icon: LayoutDashboard },
