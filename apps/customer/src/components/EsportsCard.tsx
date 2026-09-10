@@ -1,6 +1,6 @@
 import React from "react";
 import  type { EsportsGame } from "../data/esportsData";
-import { Trophy, Play } from "lucide-react";
+import { Play } from "lucide-react";
 
 interface EsportsCardProps {
   game: EsportsGame;

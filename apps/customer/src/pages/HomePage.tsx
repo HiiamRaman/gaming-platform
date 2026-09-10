@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ChevronRight, Flame, ChevronLeft, Wallet } from "lucide-react";
 import { CasinoPage } from "./CasinoPage";
 import { PromoTicker } from "../components/PromoTicker";

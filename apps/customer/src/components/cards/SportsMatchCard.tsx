@@ -1,6 +1,6 @@
 import React from 'react';
 import type { SportsMatch } from '../../data/sportsData';
-import { Zap, Play, Clock } from 'lucide-react';
+import {  Play, Clock } from 'lucide-react';
 
 interface SportsCardProps {
   match: SportsMatch;

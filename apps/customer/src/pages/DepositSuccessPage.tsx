@@ -1,7 +1,7 @@
-import React from "react";
+
 import {
   CheckCircle2,
-  ArrowRight,
+
   ShieldCheck,
   Copy,
   Home,
