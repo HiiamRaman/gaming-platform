@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronRight, Flame, ChevronLeft, Wallet } from "lucide-react";
-import { CasinoPage } from "./CasinoPage";
+
 import { PromoTicker } from "../components/PromoTicker";
 import { HomeGames } from "./HomeGames";
 // Direct imports from your src/assets folder
