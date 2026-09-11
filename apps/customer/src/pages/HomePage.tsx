@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronRight, Flame, ChevronLeft, Wallet } from "lucide-react";
 import { CasinoPage } from "./CasinoPage";
 import { PromoTicker } from "../components/PromoTicker";
-
+import { HomeGames } from "./HomeGames";
 // Direct imports from your src/assets folder
 import khalti1 from "../assets/Home-khalti/khalti1.webp";
 import khalti2 from "../assets/Home-khalti/khalti2.webp";
@@ -140,8 +140,11 @@ export function HomePage() {
       </div>
 
       {/* Main Casino Games Section */}
-      <div className="relative z-10">
+      {/* <div className="relative z-10">
         <CasinoPage />
+      </div> */}
+      <div>
+        <HomeGames/>
       </div>
 
       {/* 5-Step Process Section */}

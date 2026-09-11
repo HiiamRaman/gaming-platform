@@ -16,6 +16,8 @@ import { FishingPage } from "./pages/FishingPage";
 import { EsportsPage } from "./pages/EsportsPage";
 import { CasinoPage } from "./pages/CasinoPage";
 import { DepositSuccessPage } from "./pages/DepositSuccessPage";
+import { HomeGames } from "./pages/HomeGames";
+import { PlayGame } from "./pages/PlayGame";
 // Import the LiveChatWidget here
 import { LiveChatWidget } from "./components/LiveChatWidget";
 
@@ -65,6 +67,8 @@ function App() {
             <Route path="/esports" element={<EsportsPage />} />
             <Route path="/casino" element={<CasinoPage />} />
             <Route path="deposit-success" element={<DepositSuccessPage />} />
+            <Route path="/play/:gameId" element={<PlayGame />} />
+            <Route path="/home-game />" element={<HomeGames />} />
             <Route
               path="/promotion"
               element={<PlaceholderPage title="Promotion" />}
@@ -93,6 +97,7 @@ function App() {
             setIsLoginOpen(true);
           }}
         />
+
 
         <Footer />
 
